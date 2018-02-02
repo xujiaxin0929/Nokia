@@ -102,11 +102,12 @@
     var load_more_click = 1;
     // var winHeight = 0;
     var indexNum;
+    var pdscroll = true;
     load_more(load_more_click);
     var screenHeight = window.screen.height;
     window.onscroll = function () {
-        
         if (screenHeight + document.body.scrollTop >= document.body.scrollHeight) {
+            if(pdscroll){
             setTimeout(function () {
                 if (load_more_click == 1) {
                     load_more_click = 2
@@ -114,7 +115,12 @@
                 load_more(load_more_click);
                 load_more_click++;
             }, 1000)
+            scroll = false;
+            setTimeout(() => {
+                scroll = true;
+            }, 1200);
         }
+    }
     }
 
     function load_more(load_more_click) {
