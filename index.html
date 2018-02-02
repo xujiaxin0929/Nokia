@@ -116,9 +116,11 @@
                 load_more(load_more_click);
                 load_more_click++;
             }, 1000)
-            scroll = false;
+            
+            pdscroll = false;
+            console.log(pdscroll);
             setTimeout(() => {
-                scroll = true;
+                pdscroll = true;
             }, 1200);
         }
     }
