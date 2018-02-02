@@ -95,6 +95,7 @@
 </html>
 <script>
     var swiper = new Swiper('.swiper-container');
+    var index = 0;
     var load_more_lg;
     var load_more_number;
     var load_more_show;
@@ -102,11 +103,12 @@
     var load_more_click = 1;
     // var winHeight = 0;
     var indexNum;
+    var pdscroll = true;
     load_more(load_more_click);
     var screenHeight = window.screen.height;
     window.onscroll = function () {
-        
         if (screenHeight + document.body.scrollTop >= document.body.scrollHeight) {
+            if(pdscroll){
             setTimeout(function () {
                 if (load_more_click == 1) {
                     load_more_click = 2
@@ -114,7 +116,13 @@
                 load_more(load_more_click);
                 load_more_click++;
             }, 1000)
+            
+            pdscroll = false;
+            setTimeout(() => {
+                pdscroll = true;
+            }, 1200);
         }
+    }
     }
 
     function load_more(load_more_click) {
@@ -128,6 +136,7 @@
         for (var i = 0; i <= load_more_lg; i++) {
             if (i < j) {
                 $(".answer_list li:eq(" + i + ")").addClass("show");
+                
             }
         }
     }
