@@ -95,6 +95,7 @@
 </html>
 <script>
     var swiper = new Swiper('.swiper-container');
+    var index = 0;
     var load_more_lg;
     var load_more_number;
     var load_more_show;
@@ -137,7 +138,7 @@
                 
             }
         }
-        alert(1)
+       $('.answer_title h4').html(index++)
         // alert($('.answer_list .show').length)
     }
 </script>
