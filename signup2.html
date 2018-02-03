@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>会议报名</title>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/swiper/js/swiper.min.js"></script>
+    <script src="assets/js/flexible_css.js"></script>
+    <script src="assets/js/flexible.js"></script>
+    <script src="assets/libs/date/lCalendar.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/libs/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/libs/date/lCalendar.css">
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container" id="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/img/zs_banner.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/zs_banner.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="signUpother" class="signUpother">
+        <h2>会议报名</h2>
+        <div class="signUpother_input">
+            <div class="signUpother_input_w">
+                <div for="" class="singUpother_input_invitation">
+                    <img src="assets/img/ico_people.png" alt="" class="ico">
+                    <input type="text" class="input_invitation" placeholder="请输入您的姓名">
+                </div>
+                <div for="" class="singUpother_input_company">
+                    <img src="assets/img/ico_people.png" alt="" class="ico">
+                    <input type="text" class="input_company" placeholder="请输入您的邮箱">
+                </div>
+                <div for="" class="singUpother_input_post">
+                    <img src="assets/img/ico_people.png" alt="" class="ico">
+                    <input type="text" class="input_post" placeholder="请输入成本中心">
+                </div>
+                <div for="" class="singUpother_input_email">
+                    <img src="assets/img/ico_people.png" alt="" class="ico">
+                    <input type="text" class="input_email" placeholder="请输入出发城市">
+                </div>
+                <div class="singUpother_input_grouping">
+                    <h4>请选择分组:</h4>
+                    <div class="radio clearfix">
+                        <div class="radio_box">
+                            <input type="radio" name="radio" id="" value="咏春组">
+                            <label for="">咏春组</label>
+                        </div>
+
+                        <div class="radio_box">
+                            <input type="radio" name="radio" id="" value="咏春组">
+                            <label for="">咏春组</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" name="radio" id="" value="咏春组">
+                            <label for="">咏春组</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" name="radio" id="" value="咏春组">
+                            <label for="">咏春组</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" name="radio" id="" value="咏春组">
+                            <label for="">咏春组</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="singUpother_input_dinner">
+                    <h4>是否参加3/12欢迎晚宴（珠江夜游）:</h4>
+                    <div class="radio clearfix">
+                        <div class="radio_box">
+                            <input type="radio" name="radio" id="" value="咏春组">
+                            <label for="">是</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" name="radio" id="" value="咏春组">
+                            <label for="">否</label>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="请输入身份证信息" class="inputBox">
+                </div>
+                <div class="singUpother_input_flighen">
+                    <div class="radio clearfix">
+                        <div class="radio_box">
+                            <input type="radio" name="radio" id="" value="是">
+                            <label for="">是</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" name="radio" id="" value="否">
+                            <label for="">否</label>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="请输入航班信息" class="inputBox">
+                </div>
+
+            </div>
+        </div>
+        <div class="signUp_bottom">
+            <div class="signUp_backg"></div>
+            <div class="singUpother_input_upload">
+                <img src="assets/img/upload_img.png" alt="">
+            </div>
+            <p class="upload_title">* 请保证五官清晰</p>
+            <div class="signUp_btn">
+                <div class="signUp_btn_w">
+                    <input type="button" value="立即报名">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    var swiper = new Swiper('.swiper-container');
+    $(function () {
+        $('.radio_box').on('click', function () {
+            $(this).children('input').prop("checked", true);
+        })
+    })
+</script>
