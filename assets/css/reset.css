@@ -93,6 +93,12 @@ a {
   text-decoration: none;
 }
 
+input[type=button] {
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 /* 设置滚动条的样式 */
 .RemoveScrollbar::-webkit-scrollbar {
   width: 0px;
