@@ -420,7 +420,7 @@ body {
   font-size: 0.32rem;
   margin-left: 0.08rem;
   background: transparent;
-  margin-bottom: 0.13333rem;
+  margin-bottom: 0.08rem;
   border: none;
   background: url("../img/ico_select.png") no-repeat 3.17333rem center;
   background-size: 0.32rem 0.16rem;
@@ -1124,7 +1124,7 @@ body {
   padding-left: 0.18667rem;
 }
 
-#signUp .signUp_bottom .signUp_btn .signUp_btn_w input[type=button] {
+#signUp .signUp_bottom .signUp_btn .signUp_btn_w button {
   height: 1.17333rem;
   width: 100%;
   background-color: #124191;
@@ -1998,7 +1998,7 @@ body {
   margin: 0 auto;
 }
 
-#signUpother .signUp_bottom .signUp_btn .signUp_btn_w input[type=button] {
+#signUpother .signUp_bottom .signUp_btn .signUp_btn_w button {
   height: 1.17333rem;
   width: 100%;
   background-color: #124191;

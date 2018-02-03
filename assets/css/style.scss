@@ -189,7 +189,7 @@ body {
                         font-size: rem(24);
                         margin-left: rem(6);
                         background: transparent;
-                        margin-bottom: rem(10);
+                        margin-bottom: rem(6);
                         border: none;
                         background: url('../img/ico_select.png') no-repeat rem(238) center;
                         background-size: rem(24) rem(12);
@@ -792,7 +792,7 @@ body {
                         padding-left: rem(14);
                     }
                 }
-                input[type=button] {
+                button{
                     height: rem(88);
                     width: 100%;
                     background-color: #124191;
@@ -1549,7 +1549,7 @@ body {
                 width: rem(690);
                 height: 100%;
                 margin: 0 auto;
-                input[type=button] {
+                button{
                     height: rem(88);
                     width: 100%;
                     background-color: #124191;
