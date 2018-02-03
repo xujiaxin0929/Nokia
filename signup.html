@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>会议报名</title>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/swiper/js/swiper.min.js"></script>
+    <script src="assets/js/flexible_css.js"></script>
+    <script src="assets/js/flexible.js"></script>
+    <script src="assets/libs/date/lCalendar.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/libs/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/libs/date/lCalendar.css">
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container" id="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/img/zs_banner.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/zs_banner.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="signUp" class="signUp">
+        <h2>会议报名</h2>
+        <div class="signUp_input">
+            <div class="signUp_input_w">
+                <div class="signUp_input_double clearfix">
+                    <label for="" class="input_left">
+                        <img src="assets/img/ico_people.png" alt="" class="ico">
+                        <input type="text" name="" id="" class="input_name" placeholder="请输入您的姓名">
+                    </label>
+                    <label for="" class="input_right">
+                        <img src="assets/img/ico_gender.png" alt="" class="ico">
+                        <select class="input_gender">
+                            <option value="volvo">请选择您的姓别</option>
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </label>
+                </div>
+                <div for="" class="singUp_input_work">
+                    <img src="assets/img/ico_people.png" alt="" class="ico">
+                    <select class="input_work">
+                        <option value="volvo">行业</option>
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </div>
+                <div for="" class="singUp_input_invitation">
+                    <img src="assets/img/ico_people.png" alt="" class="ico">
+                    <input type="text" class="input_invitation" placeholder="请输入大会邀请人姓名">
+                </div>
+                <div for="" class="singUp_input_company">
+                    <img src="assets/img/ico_people.png" alt="" class="ico">
+                    <input type="text" class="input_company" placeholder="请输入您的公司">
+                </div>
+                <div for="" class="singUp_input_post">
+                    <img src="assets/img/ico_people.png" alt="" class="ico">
+                    <input type="text" class="input_post" placeholder="请输入您的职务">
+                </div>
+                <div for="" class="singUp_input_email">
+                    <img src="assets/img/ico_people.png" alt="" class="ico">
+                    <input type="text" class="input_email" placeholder="请输入您的邮箱">
+                </div>
+                <div for="" class="singUp_input_phone">
+                    <img src="assets/img/ico_people.png" alt="" class="ico">
+                    <input type="text" class="input_phone" placeholder="请输入您的电话">
+                </div>
+                <div class="signUp_input_date clearfix">
+                    <label for="" class="input_left">
+                        <img src="assets/img/ico_people.png" alt="" class="ico">
+                        <input id="come" type="text" readonly="" name="input_date" placeholder="请选择抵达日期" data-lcalendar="2011-01-1,2019-12-31" />
+                    </label>
+                    <label for="" class="input_right">
+                        <img src="assets/img/ico_gender.png" alt="" class="ico">
+
+                        <input id="out" type="text" readonly="" name="input_date" placeholder="请选择抵达日期" data-lcalendar="2011-01-1,2019-12-31" />
+                    </label>
+                </div>
+                <div class="signUp_input_hotel clearfix">
+                    <label for="" class="input_left">
+                        <img src="assets/img/ico_people.png" alt="" class="ico">
+                        <select class="input_hotel">
+                            <option value="volvo">请选择您的姓别</option>
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </label>
+                    <label for="" class="input_right">
+                        <img src="assets/img/ico_gender.png" alt="" class="ico">
+                        <select class="input_room">
+                            <option value="volvo">请选择您的姓别</option>
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="signUp_bottom">
+            <div class="signUp_backg"></div>
+            <div class="signUp_btn">
+                <div class="signUp_btn_w">
+                    <div class="signUp_title">
+                        <span>14号晚/欢迎酒会(含简餐)</span>
+                        <span>15号晚/晚宴</span>
+                    </div>
+                    <div class="signUp_division">
+                        <img src="assets/img/sign_divs.png" alt="">
+                    </div>
+                    <div class="signUp_check">
+                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <label for="">
+                        <input type="text" placeholder="请输入您的身份证号">
+                        <span>*仅供购买船票保险使用</span>
+                    </label>
+                    <input type="button" class="signup_button" value="立即报名">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="model" id="model">
+        <div class="model_prompt">
+            <img src="assets/img/ico_small.png" class="ico_small" alt="">
+            <p>恭喜你报名成功</p>
+            <a href="">返回首页</a>
+            <img src="assets/img/ico_close.png" class="close" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    var swiper = new Swiper('.swiper-container');
+    $('.input_gender option:eq(0)').hide();
+    var come = new lCalendar();
+    come.init({
+        'trigger': '#come',
+        'type': 'date'
+    });
+    var out = new lCalendar();
+    out.init({
+        'trigger': '#out',
+        'type': 'date'
+    });
+    $('.signup_button').on('click',function(){
+        $('#model').show();
+        stop();
+    })
+    $('.close').on('click',function(){
+        $('#model').hide();
+        move();
+    })
+    var mo = function (e) {
+        e.preventDefault()
+    };
+    function stop() {
+        document.body.style.overflow = 'hidden';
+        document.addEventListener("touchmove", mo, false); 
+    }
+    function move() {
+        document.body.style.overflow = ''; 
+        document.removeEventListener("touchmove", mo, false);
+    }
+</script>
